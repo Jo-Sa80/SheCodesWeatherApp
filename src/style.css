@@ -9,6 +9,12 @@ body {
   font-variation-settings: "wdth" 100, "YTLC" 500;
 }
 
+a {
+}
+header {
+  border-bottom: 1px solid #c9c8c8;
+  padding: 0 0 25px 0;
+}
 .weatherApp {
   background-color: white;
   max-width: 600px;
@@ -16,4 +22,39 @@ body {
   border-radius: 20px;
   padding: 30px 20px;
   box-shadow: 0 30px 50px rgb(65, 50, 100, 0.08);
+}
+
+.search-input {
+  width: 75%;
+  border-radius: 5px;
+  border: solid 2px;
+  border-color: blue;
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+}
+
+.search-button {
+  border-radius: 5px;
+  padding: 10px 25px;
+  color: blue;
+  width: 15%;
+
+  border-color: blue;
+  font-size: 16px;
+  transform: 200ms;
+  text-align: center;
+}
+
+:hover.search-button {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  border-top: 1px solid #c9c8c8;
+  padding: 25px 0;
+  text-align: center;
+  font-size: 13px;
 }
