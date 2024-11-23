@@ -1,0 +1,19 @@
+body {
+  background-color: rgb(246, 250, 250);
+  color: blue;
+
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+.weatherApp {
+  background-color: white;
+  max-width: 600px;
+  margin: 60px auto;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 30px 50px rgb(65, 50, 100, 0.08);
+}
