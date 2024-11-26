@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,7 +30,7 @@
       <main>
         <div class="weather-data">
           <div>
-            <h1 class="weather-city">Berlin</h1>
+            <h1 class="weather-city" id="weather-city">Berlin</h1>
             <p class="weather-date">
               Monday 12:12, clowdy <br />
               Humidity: <span class="highlight">66%</span>, Wind:
@@ -58,5 +60,6 @@
         >
       </footer>
     </div>
+    <script src="src/script.js"></script>
   </body>
 </html>
