@@ -12,16 +12,20 @@ function showTemperature(response) {
   wind.innerHTML = `${Math.round(response.data.wind.speed)}km/h`;
 }
 
-function showSubmittedCity(event) {
-  event.preventDefault();
-  let searchInput = document.querySelector("#searchInput");
-  let city = searchInput.value;
-
+function showCity(city) {
   let apiKey = "1c9131f04b7fo56320ba61f00b43t4cd";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
 
   axios.get(apiUrl).then(showTemperature);
 }
 
+function showSubmittedCity(event) {
+  event.preventDefault();
+  let searchInput = document.querySelector("#searchInput");
+  showCity(searchInput.value);
+}
+
 let searchElement = document.querySelector("#searchForm");
 searchElement.addEventListener("submit", showSubmittedCity);
+
+showCity("Berlin");
