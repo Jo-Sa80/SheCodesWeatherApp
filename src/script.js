@@ -29,3 +29,34 @@ let searchElement = document.querySelector("#searchForm");
 searchElement.addEventListener("submit", showSubmittedCity);
 
 showCity("Berlin");
+
+function formatDate(date) {
+  let minutes = date.getMinutes();
+  let hours = date.getHours();
+  let day = date.getDay();
+
+  console.log(minutes);
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  let formatetDay = days[day];
+  return `${formatetDay}, ${hours}:${minutes}`;
+}
+
+let currentDateElement = document.querySelector("#current-date");
+let currentDate = new Date();
+
+currentDateElement.innerHTML = formatDate(currentDate);
