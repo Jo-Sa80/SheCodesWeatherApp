@@ -6,6 +6,7 @@ function showTemperature(response) {
   let wind = document.querySelector("#wind");
   let time = document.querySelector("#current-date");
   let date = new Date(response.data.time * 1000);
+  let icon = document.querySelector("#icon");
 
   currentTemp.innerHTML = Math.round(response.data.temperature.current);
   currentCity.innerHTML = response.data.city;
@@ -13,6 +14,7 @@ function showTemperature(response) {
   humidity.innerHTML = `${response.data.temperature.humidity}%`;
   wind.innerHTML = `${Math.round(response.data.wind.speed)}km/h`;
   time.innerHTML = formatDate(date);
+  icon.innerHTML = `<img src="${response.data.condition.icon_url}" >`;
 }
 
 function showCity(city) {

@@ -75,12 +75,14 @@ main {
   display: flex;
 }
 .value {
-  font-size: 70px;
+  font-size: 85px;
   font-weight: bolder;
 }
 .icon {
-  font-size: 40px;
-  margin-top: 20px;
+  height: 17px;
+  width: 17px;
+  margin-right: 70px;
+  margin-top: 5px;
 }
 .metric {
   margin-top: 13px;
